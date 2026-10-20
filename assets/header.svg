@@ -131,7 +131,7 @@
 
       <!-- Pill 3: System Design & Testing -->
       <rect x="352" y="0" width="160" height="28" rx="6" fill="#0F0104" fill-opacity="0.75" stroke="#590D22" stroke-width="1" />
-      <text x="14" y="18" class="badge-text" transform="translate(352, 0)">📐 Architecture & Tests</text>
+      <text x="14" y="18" class="badge-text" transform="translate(352, 0)">📐 Architecture &amp; Tests</text>
     </g>
   </g>
 </svg>
