@@ -1,0 +1,137 @@
+<svg fill="none" viewBox="0 0 960 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient: Near-Black to Deep Wine -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0104" />
+      <stop offset="55%" stop-color="#25030A" />
+      <stop offset="100%" stop-color="#590D22" />
+    </linearGradient>
+
+    <!-- Subtle Node Glow Gradient -->
+    <linearGradient id="lineGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#590D22" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#FF4D6D" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#590D22" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Radial Accent Light -->
+    <radialGradient id="topGlow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#FF4D6D" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#590D22" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0F0104" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FF4D6D" stroke-width="0.75" stroke-opacity="0.07" />
+      <circle cx="40" cy="40" r="1" fill="#FF4D6D" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      fill: #FF758F;
+      text-transform: uppercase;
+    }
+    .title-main {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Space Grotesk', Roboto, sans-serif;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      fill: #FFFFFF;
+    }
+    .title-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      fill: #D8B4BC;
+      line-height: 24px;
+    }
+    .badge-text {
+      font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #FFCCD5;
+    }
+    .code-accent {
+      font-family: 'JetBrains Mono', Consolas, monospace;
+      font-size: 13px;
+      fill: #A06474;
+    }
+  </style>
+
+  <!-- Background Base with subtle border -->
+  <rect width="958" height="258" x="1" y="1" rx="14" fill="url(#bgGradient)" stroke="#590D22" stroke-width="1.5" />
+
+  <!-- Subtle Grid Overlay -->
+  <rect width="958" height="258" x="1" y="1" rx="14" fill="url(#gridPattern)" />
+  <rect width="958" height="258" x="1" y="1" rx="14" fill="url(#topGlow)" />
+
+  <!-- Abstract Architecture Graphics: Nodes, Pipelines & Layers (Right Side) -->
+  <g opacity="0.85" transform="translate(620, 25)">
+    <!-- Circuit / Topology Paths -->
+    <path d="M 40 40 L 150 40 L 210 100 L 290 100" stroke="url(#lineGlow)" stroke-width="2" fill="none" />
+    <path d="M 80 160 L 140 160 L 190 110 L 270 110" stroke="url(#lineGlow)" stroke-width="1.5" fill="none" stroke-dasharray="4 4" />
+    <path d="M 120 70 L 170 70 L 220 120 L 220 180" stroke="#FF4D6D" stroke-opacity="0.3" stroke-width="1.5" fill="none" />
+
+    <!-- Server / Service Cluster Nodes -->
+    <!-- Node 1: API Gateway -->
+    <rect x="25" y="24" width="30" height="30" rx="6" fill="#25030A" stroke="#FF4D6D" stroke-width="1.5" />
+    <circle cx="40" cy="39" r="4" fill="#FF758F" />
+
+    <!-- Node 2: Core Service -->
+    <rect x="195" y="85" width="30" height="30" rx="6" fill="#25030A" stroke="#FF4D6D" stroke-width="1.5" />
+    <circle cx="210" cy="100" r="4" fill="#FF4D6D" />
+
+    <!-- Node 3: Storage / DB Entity -->
+    <rect x="275" y="85" width="32" height="42" rx="4" fill="#0F0104" stroke="#A06474" stroke-width="1.5" />
+    <line x1="279" y1="95" x2="303" y2="95" stroke="#FF758F" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="279" y1="105" x2="303" y2="105" stroke="#FF758F" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6" />
+    <line x1="279" y1="115" x2="295" y2="115" stroke="#FF758F" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.4" />
+
+    <!-- Node 4: Worker/Event Node -->
+    <circle cx="80" cy="160" r="14" fill="#25030A" stroke="#A06474" stroke-width="1.5" />
+    <circle cx="80" cy="160" r="5" fill="#FF758F" fill-opacity="0.8" />
+
+    <!-- Pipeline Signal Pulses -->
+    <circle cx="150" cy="40" r="3.5" fill="#FFF" />
+    <circle cx="210" cy="100" r="3" fill="#FFF" />
+    <circle cx="140" cy="160" r="2.5" fill="#FFCCD5" />
+  </g>
+
+  <!-- Left Content Layout -->
+  <g transform="translate(48, 46)">
+    <!-- Role / Monospace Category Eyebrow -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="-3" width="224" height="24" rx="12" fill="#590D22" fill-opacity="0.5" stroke="#FF4D6D" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="12" cy="9" r="4" fill="#00E676" />
+      <text x="24" y="13" class="title-sub">JAVA BACKEND DEVELOPER</text>
+    </g>
+
+    <!-- Main Identity Name -->
+    <text x="0" y="58" class="title-main">MD. ASIF</text>
+
+    <!-- Purpose Positioning -->
+    <text x="0" y="94" class="title-desc">Building practical software systems, one well-designed backend at a time.</text>
+    <text x="0" y="117" class="title-desc" fill-opacity="0.75" font-size="14.5px">B.Tech CSE Undergrad (2024–2028) · Spring Boot · REST APIs · Relational Modeling</text>
+
+    <!-- Micro Tech Pills -->
+    <g transform="translate(0, 142)">
+      <!-- Pill 1: Java & Spring Boot -->
+      <rect x="0" y="0" width="168" height="28" rx="6" fill="#0F0104" fill-opacity="0.75" stroke="#590D22" stroke-width="1" />
+      <text x="14" y="18" class="badge-text">⚡ Java 21 · Spring Boot</text>
+
+      <!-- Pill 2: MySQL & Data JPA -->
+      <rect x="180" y="0" width="160" height="28" rx="6" fill="#0F0104" fill-opacity="0.75" stroke="#590D22" stroke-width="1" />
+      <text x="14" y="18" class="badge-text" transform="translate(180, 0)">🗄️ MySQL · Spring Data</text>
+
+      <!-- Pill 3: System Design & Testing -->
+      <rect x="352" y="0" width="160" height="28" rx="6" fill="#0F0104" fill-opacity="0.75" stroke="#590D22" stroke-width="1" />
+      <text x="14" y="18" class="badge-text" transform="translate(352, 0)">📐 Architecture & Tests</text>
+    </g>
+  </g>
+</svg>
